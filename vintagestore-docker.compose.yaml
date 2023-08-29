@@ -1,0 +1,13 @@
+version: "3"
+services:
+  rest-book:
+    image: "daguilar/rest-book:1.0.0-SNAPSHOT"
+    ports:
+      - "8702:8702"
+    environment:
+      - QUARKUS_REST_CLIENT_ORG_AGONCAL_QUARKUS_MICROSERVICES_BOOK_NUMBERPROXY_URI=http://rest-number:8701
+
+  rest-number:
+    image: "daguilar/rest-number:1.0.0-SNAPSHOT"
+    ports:
+      - "8701:8701"
