@@ -30,13 +30,13 @@ Follow these steps to build and run the microservices using Docker Compose:
 2. **Replace Docker Image Names**
    Open vintagestore-docker.compose.yaml file and replace image: value with your Docker Image created in the previous step.
 
-2. **Run Microservices with Docker Compose**
+3. **Run Microservices with Docker Compose**
    Open a terminal and navigate to the root directory of your project. Run the following commands to build Docker images for the `rest-book` and `rest-number` microservices:
 
    ```shell
    cd path/to/your/project
    docker-compose -f vintagestore-docker-compose.yaml up
  
-3. **Stop Microservices**
+4. **Stop Microservices**
       ```shell
       docker-compose -f vintagestore-docker-compose.yaml down
